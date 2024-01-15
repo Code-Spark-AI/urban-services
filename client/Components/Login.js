@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 
-export default function Register() {
+export default function Login() {
   const [formData, setFormData] = useState({
-    username: "",
     email: "",
     password: "",
   });
@@ -25,14 +24,8 @@ export default function Register() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Register</Text>
+      <Text style={styles.title}>Login</Text>
       <View style={styles.form}>
-        <TextInput
-          style={styles.input}
-          placeholder="Username"
-          value={formData.username}
-          onChangeText={(text) => handleInputChange("username", text)}
-        />
         <TextInput
           style={styles.input}
           placeholder="Email"
